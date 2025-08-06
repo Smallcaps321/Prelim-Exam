@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/214943635_849528895998156_1903951484216384999_n.png?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGosVmiuWEyYbE2jq-qPfdKgmeJobYTqceCZ4mhthOpx1HSn6QFt1Da4SwkkZnNZFNvpdvIPl_3MIbStakG36n2&_nc_ohc=mFBoQ9Mblh0Q7kNvwGdi7ve&_nc_oc=AdlVVphD6PRzXDA8L9igCbAleks4V2PmwYc64uvWHzEYNoEYNWcZdj-o-U5gvmDPAFo&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=wSVzgrL5YroUSHVjkU5wkg&oh=00_AfXsVvwkfnt4cdJVMkHcP7d3jnALln8GTLPLcUAmvqcegw&oe=689911C7" height="40" width="40" alt="">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="#">Group 3</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="student.html">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="attendance.html">Attendance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Form</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+        <div class="container">
+            <h1 style="text-align: center;">Add Student Form</h1>
+            <div class="row border">
+                <div class="col-md-3 border">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="rounded-circle" alt="Cinque Terre" height="300" width="300">
+                    <form class="was-validated">
+                       <br>
+
+                        <div class="mb-3">
+                            <input type="file" class="form-control" aria-label="file example" required>
+                            <div class="invalid-feedback">Example invalid form file feedback</div>
+                        </div>
+                         </form>
+                        
+                </div><!--col-->
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Juan" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Dela Cruz" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Middle Name:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Cruz" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+
+
+                    </div><!--row-->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                               <div class="form-check">
+                                 <label for="uname" class="form-label">Gender</label><br>
+                                <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck2">Male</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck3">Female</label>
+                                <div class="invalid-feedback">More example invalid feedback text</div>
+                            </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Civil Status</label>
+                               <select class="form-select" aria-label="Default select example" required>
+                                    <option selected>Single</option>
+                                    <option value="1">Single</option>
+                                 
+                                   
+                                    </select>
+                                <div class="valid-feedback">Valid.</div>
+                               
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="uname" placeholder="ex. Cruz" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="row">
+                        <div class="col-md-8">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Place of Birth</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Tarlac City" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                         <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Nationality</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Filipino" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+
+                        
+                       
+
+                    </div><!--row-->
+
+                     <div class="row">
+                        <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Religion</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Roman Catholic" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                         <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label ">Contact No.</label>
+                                <input type="tel" class="form-control" id="uname" placeholder="09xxxxxxxxx" name="uname" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Invalid Number.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+
+                        <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Juan@gmail.com" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+
+                        
+                       
+
+                    </div><!--row-->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Street</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. 85th Subd." name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+
+                        <div class="row">
+                        <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Barangay</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Sto. Rosario" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">City</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Capas" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        <div class="col-md-4">
+                          <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Province</label>
+                                <input type="text" class="form-control" id="uname" placeholder="ex. Tarlac" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Required.</div>
+                                </div>
+                              
+                                </form>
+                        </div><!--col-->
+                        
+                        <div class="col-md-3"><button type="button" class="btn btn-success">Add Student</button>
+                        </div>
+                       
+                    </div><!--row-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div><!--col-->
+                
+
+            </div><!--row-->
+               <br>
+        </div><!--Container-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
