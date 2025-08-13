@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" height="40" width="40" alt="">
+    <img src="355856747_7067027543313272_7700802000509679933_n.jpg" height="40" width="40" alt="">
     <a class="navbar-brand ms-2" href="#">Group 3</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
   </div>
 </nav>
 
-<div class="container my-4">
+<div class="container my-4 shadow p-3 mb-5 bg-body-tertiary rounded">
   <h1 class="text-center">Add Student Form</h1>
   
-  <form action="/student.html" class="was-validated">
+  <form action="student.html" class="was-validated">
     <div class="row  p-3">
      
       <div class="col-md-3  text-center ">
@@ -40,6 +40,7 @@
         <div class="mt-3">
           <input type="file" class="form-control" required>
           <div class="invalid-feedback">Please select a file.</div>
+          
         </div>
       </div> <!-- Left Column -->
 
@@ -49,15 +50,28 @@
           <div class="col-md-4">
             <label class="form-label">Last Name</label>
             <input type="text" class="form-control" name="lastname" placeholder="ex. Juan" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
+
           </div>
+          
           <div class="col-md-4">
             <label class="form-label">First Name</label>
             <input type="text" class="form-control" name="firstname" placeholder="ex. Dela Cruz" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
+          
           <div class="col-md-4">
             <label class="form-label">Middle Name</label>
             <input type="text" class="form-control" name="middlename" placeholder="ex. Cruz" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
+          
         </div> <!-- Right Column -->
 
         <div class="row mt-3">
@@ -66,10 +80,12 @@
             <div class="form-check form-check-inline">
               <input type="radio" class="form-check-input" name="gender" value="Male" required>
               <label class="form-check-label">Male</label>
+              
             </div>
             <div class="form-check form-check-inline">
               <input type="radio" class="form-check-input" name="gender" value="Female" required>
               <label class="form-check-label">Female</label>
+              
             </div>
           </div><!--Column -->
           <div class="col-md-4">
@@ -80,10 +96,16 @@
               <option>Married</option>
               <option>Widowed</option>
             </select>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">Date of Birth</label>
             <input type="date" class="form-control" name="dob" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
         </div>
 
@@ -91,10 +113,16 @@
           <div class="col-md-8">
             <label class="form-label">Place of Birth</label>
             <input type="text" class="form-control" name="birthplace" placeholder="ex. Tarlac City" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">Nationality</label>
             <input type="text" class="form-control" name="nationality" placeholder="ex. Filipino" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
         </div>
 
@@ -102,34 +130,56 @@
           <div class="col-md-4">
             <label class="form-label">Religion</label>
             <input type="text" class="form-control" name="religion" placeholder="ex. Roman Catholic" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">Contact No.</label>
-            <input type="tel" class="form-control" name="contact" placeholder="09xxxxxxxxx" required>
+            <input type="tel" class="form-control" name="contact" pattern="09[0-9]{9}" required  placeholder="09xxxxxxxxx" >
+             <div class="invalid-feedback">
+              Invalid Pattern
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">Email</label>
             <input type="email" class="form-control" name="email" placeholder="ex. Juan@gmail.com" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
         </div>
 
         <div class="mt-3">
           <label class="form-label">Street</label>
           <input type="text" class="form-control" name="street" placeholder="ex. 85th Subd." required>
+           <div class="invalid-feedback">
+              Required
+            </div>
         </div>
 
         <div class="row mt-3">
           <div class="col-md-4">
             <label class="form-label">Barangay</label>
             <input type="text" class="form-control" name="barangay" placeholder="ex. Sto. Rosario" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">City</label>
             <input type="text" class="form-control" name="city" placeholder="ex. Capas" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
           </div>
           <div class="col-md-4">
             <label class="form-label">Province</label>
             <input type="text" class="form-control" name="province" placeholder="ex. Tarlac" required>
+             <div class="invalid-feedback">
+              Required
+            </div>
+           
           </div>
         </div>
 
